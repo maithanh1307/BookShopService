@@ -15,3 +15,11 @@
 
 ** AXON FRAMEWORK
 - xây dựng và phát triển hệ thống phân tán
+
+** Để chạy Axon Server trên local thì vào folder software, chọn folder axon sau đó mở terminal
+    java -jar axonserver.jar
+    truy cập: localhost://8024
+
+** Chạy Axon Server trên Docker
+    Nếu chưa có docker image thì mở terminal và nhập: docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver
+    xem docker gồm những container nào: docker ps -a
