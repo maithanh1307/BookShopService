@@ -71,6 +71,11 @@
 			<artifactId>guava</artifactId>
 			<version>33.3.1-jre</version>
 		</dependency>
+		<dependency>
+			<groupId>com.bookservice</groupId>
+			<artifactId>commonservice</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 	</dependencies>
 	<dependencyManagement>

@@ -23,3 +23,6 @@
 ** Chạy Axon Server trên Docker
     Nếu chưa có docker image thì mở terminal và nhập: docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver
     xem docker gồm những container nào: docker ps -a
+
+**Common Service
+- Dùng để tái sử dụng các code trong project book service
