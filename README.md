@@ -26,3 +26,7 @@
 
 **Common Service
 - Dùng để tái sử dụng các code trong project book service
+
+**Spring AOP (Aspect Oriented Programming)
+- lập trình theo hướng khía cạnh
+- nằm trong 1 phần của Spring Framework
