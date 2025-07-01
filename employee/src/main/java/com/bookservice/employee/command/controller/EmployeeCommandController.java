@@ -1,16 +1,16 @@
 package com.bookservice.employee.command.controller;
 
 import com.bookservice.employee.command.command.CreateEmployeeCommand;
+import com.bookservice.employee.command.command.DeleteEmployeeCommand;
+import com.bookservice.employee.command.command.UpdateEmployeeCommand;
 import com.bookservice.employee.command.data.EmployeeRepository;
+import com.bookservice.employee.command.model.UpdateEmployeeModel;
 import jakarta.validation.Valid;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.bookservice.employee.command.model.CreateEmployeeModel;
-
+import com.bookservice.employee.command.model.UpdateEmployeeModel;
 import java.util.UUID;
 
 @RestController
@@ -26,4 +26,19 @@ public class EmployeeCommandController {
                                 false);
         return commandGateway.sendAndWait(command);
     }
+
+    @PutMapping("/{employeeId}")
+    public String updateEmployee(@PathVariable String employeeId, @Valid @RequestBody UpdateEmployeeModel model) {
+        UpdateEmployeeCommand command = new UpdateEmployeeCommand(employeeId, model.getFirstName(),
+                                                                    model.getLastName(), model.getKin(),
+                                                                    model.getIsDisciplined());
+        return commandGateway.sendAndWait(command);
+    }
+
+    @DeleteMapping("/{employeeId}")
+    public String deleteEmployee(@PathVariable String employeeId) {
+        DeleteEmployeeCommand command = new DeleteEmployeeCommand(employeeId);
+        return commandGateway.sendAndWait(command);
+    }
+
 }
