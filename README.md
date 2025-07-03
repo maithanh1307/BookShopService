@@ -30,3 +30,8 @@
 **Spring AOP (Aspect Oriented Programming)
 - lập trình theo hướng khía cạnh
 - nằm trong 1 phần của Spring Framework
+
+** SWAGGER
+-  là 1 open source
+- sử dụng trong 1 dịch vụ web restful
+- cho phép định nghĩa và thiết kế api
