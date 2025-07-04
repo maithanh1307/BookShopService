@@ -40,3 +40,6 @@
 - tăng thời gian response
 - tốn tiền
 - gây tắc nghẽn
+
+** FILE APPLICATION.YML
+- Dùng để cấu hình cho api gateway

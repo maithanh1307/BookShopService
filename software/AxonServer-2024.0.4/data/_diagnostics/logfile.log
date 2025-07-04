@@ -112,3 +112,35 @@
 2025-07-04 12:20:42.383 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application connected: employee, clientId = 35192@MaiThanh, clientStreamId = 35192@MaiThanh.9c9c5cf4-a072-42e7-84ee-4acf424259de, context = default
 2025-07-04 12:22:39.284 |  INFO |           grpc-executor-4 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: employee, clientId = 35192@MaiThanh.9c9c5cf4-a072-42e7-84ee-4acf424259de, context = default: Platform connection completed by client
 2025-07-04 12:22:39.284 |  INFO |           grpc-executor-4 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: employee, clientId = 35192@MaiThanh.9c9c5cf4-a072-42e7-84ee-4acf424259de, context = default: Platform connection completed by client
+2025-07-04 13:12:33.788 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway stopped
+2025-07-04 13:12:33.788 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway stopped
+2025-07-04 13:12:33.791 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 11: Stopping the node...
+2025-07-04 13:12:33.791 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 11: Stopping the node...
+2025-07-04 13:12:33.793 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 11: Stop replication thread
+2025-07-04 13:12:33.793 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 11: Stop replication thread
+2025-07-04 13:12:33.794 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 11: last applied: 16
+2025-07-04 13:12:33.794 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 11: last applied: 16
+2025-07-04 13:12:33.796 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 11: MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 steps down from Leader role.
+2025-07-04 13:12:33.796 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 11: MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 steps down from Leader role.
+2025-07-04 13:12:33.796 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 11: Updating state from LeaderState to IdleState (Node stopped)
+2025-07-04 13:12:33.796 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 11: Updating state from LeaderState to IdleState (Node stopped)
+2025-07-04 13:12:33.797 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | _admin: No longer leader
+2025-07-04 13:12:33.797 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | _admin: No longer leader
+2025-07-04 13:12:33.867 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 11: Node stopped.
+2025-07-04 13:12:33.867 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 11: Node stopped.
+2025-07-04 13:12:33.867 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 11: Stopping the node...
+2025-07-04 13:12:33.867 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 11: Stopping the node...
+2025-07-04 13:12:33.867 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 11: Stop replication thread
+2025-07-04 13:12:33.867 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 11: Stop replication thread
+2025-07-04 13:12:33.868 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 11: last applied: 25
+2025-07-04 13:12:33.868 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 11: last applied: 25
+2025-07-04 13:12:33.868 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 11: MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a steps down from Leader role.
+2025-07-04 13:12:33.868 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 11: MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a steps down from Leader role.
+2025-07-04 13:12:33.868 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 11: Updating state from LeaderState to IdleState (Node stopped)
+2025-07-04 13:12:33.868 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 11: Updating state from LeaderState to IdleState (Node stopped)
+2025-07-04 13:12:33.868 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | default: No longer leader
+2025-07-04 13:12:33.868 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | default: No longer leader
+2025-07-04 13:12:33.876 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 11: Node stopped.
+2025-07-04 13:12:33.876 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 11: Node stopped.
+2025-07-04 13:12:33.896 |  INFO | ngApplicationShutdownHook | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server stopped
+2025-07-04 13:12:33.896 |  INFO | ngApplicationShutdownHook | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server stopped
