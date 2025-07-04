@@ -35,3 +35,8 @@
 -  là 1 open source
 - sử dụng trong 1 dịch vụ web restful
 - cho phép định nghĩa và thiết kế api
+
+** NHƯỢC ĐIỂM API GATEWAY
+- tăng thời gian response
+- tốn tiền
+- gây tắc nghẽn
