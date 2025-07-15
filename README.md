@@ -43,3 +43,9 @@
 
 ** FILE APPLICATION.YML
 - Dùng để cấu hình cho api gateway
+
+**CÁCH CHẠY REDIS TRÊN DOCKER
+    docker run --name some-redis -d redis
+    connect redis to docker
+        docker exec -it redis
+        docker exec -it redis redis-cli
