@@ -1,792 +1,130 @@
-2025-07-15 13:19:07.090 |  INFO |                      main | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server started on port: 8224 - no SSL
-2025-07-15 13:19:07.090 |  INFO |                      main | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server started on port: 8224 - no SSL
-2025-07-15 13:19:07.245 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: init replication group
-2025-07-15 13:19:07.245 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: init replication group
-2025-07-15 13:19:07.277 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | _admin: Initializing log
-2025-07-15 13:19:07.277 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | _admin: Initializing log
-2025-07-15 13:19:07.417 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Updating state from null to IdleState (Node initialized.)
-2025-07-15 13:19:07.417 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Updating state from null to IdleState (Node initialized.)
-2025-07-15 13:19:07.430 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: init replication group
-2025-07-15 13:19:07.430 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: init replication group
-2025-07-15 13:19:07.437 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | default: Initializing log
-2025-07-15 13:19:07.437 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | default: Initializing log
-2025-07-15 13:19:07.450 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Updating state from null to IdleState (Node initialized.)
-2025-07-15 13:19:07.450 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Updating state from null to IdleState (Node initialized.)
-2025-07-15 13:19:07.453 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group starting
-2025-07-15 13:19:07.453 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group starting
-2025-07-15 13:19:07.455 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Starting the node...
-2025-07-15 13:19:07.455 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Starting the node...
-2025-07-15 13:19:07.470 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Updating state from IdleState to FollowerState (Role PRIMARY)
-2025-07-15 13:19:07.470 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Updating state from IdleState to FollowerState (Role PRIMARY)
-2025-07-15 13:19:07.483 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "_admin" is scheduled each 1 hour(s).
-2025-07-15 13:19:07.483 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "_admin" is scheduled each 1 hour(s).
-2025-07-15 13:19:07.484 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Node started.
-2025-07-15 13:19:07.484 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Node started.
-2025-07-15 13:19:07.486 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group started
-2025-07-15 13:19:07.486 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group started
-2025-07-15 13:19:07.487 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: Replication group starting
-2025-07-15 13:19:07.487 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: Replication group starting
-2025-07-15 13:19:07.490 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | Replication group controller running
-2025-07-15 13:19:07.490 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | Replication group controller running
-2025-07-15 13:19:07.503 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: starting event store default
-2025-07-15 13:19:07.503 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: starting event store default
-2025-07-15 13:19:07.689 |  INFO |                      main | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway started on port: 8124 - no SSL
-2025-07-15 13:19:07.689 |  INFO |                      main | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway started on port: 8124 - no SSL
-2025-07-15 13:19:07.743 |  INFO |                      main | o.s.b.w.embedded.tomcat.TomcatWebServer  | Tomcat started on port(s): 8024 (http) with context path ''
-2025-07-15 13:19:07.743 |  INFO |                      main | o.s.b.w.embedded.tomcat.TomcatWebServer  | Tomcat started on port(s): 8024 (http) with context path ''
-2025-07-15 13:19:07.797 |  INFO |                      main | io.axoniq.axonserver.AxonServer          | Started AxonServer in 55.549 seconds (JVM running for 57.536)
-2025-07-15 13:19:07.797 |  INFO |                      main | io.axoniq.axonserver.AxonServer          | Started AxonServer in 55.549 seconds (JVM running for 57.536)
-2025-07-15 13:19:08.218 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: Event store started default
-2025-07-15 13:19:08.218 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: Event store started default
-2025-07-15 13:19:08.219 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Starting the node...
-2025-07-15 13:19:08.219 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Starting the node...
-2025-07-15 13:19:08.220 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Updating state from IdleState to FollowerState (Role PRIMARY)
-2025-07-15 13:19:08.220 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Updating state from IdleState to FollowerState (Role PRIMARY)
-2025-07-15 13:19:08.221 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "default" is scheduled each 1 hour(s).
-2025-07-15 13:19:08.221 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "default" is scheduled each 1 hour(s).
-2025-07-15 13:19:08.222 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Node started.
-2025-07-15 13:19:08.222 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Node started.
-2025-07-15 13:19:08.222 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftController   | default: Replication group started
-2025-07-15 13:19:08.222 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftController   | default: Replication group started
-2025-07-15 13:19:09.540 |  INFO |       default-raftState-0 | i.a.axonserver.cluster.FollowerState     | default in term 13: Timeout in follower state: 1320 ms.
-2025-07-15 13:19:09.540 |  INFO |       default-raftState-0 | i.a.axonserver.cluster.FollowerState     | default in term 13: Timeout in follower state: 1320 ms.
-2025-07-15 13:19:09.583 |  INFO |       default-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Updating state from FollowerState to PreVoteState (default in term 13: Timeout in follower state: 1320 ms.)
-2025-07-15 13:19:09.583 |  INFO |       default-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Updating state from FollowerState to PreVoteState (default in term 13: Timeout in follower state: 1320 ms.)
-2025-07-15 13:19:09.631 |  INFO |       default-raftState-0 | i.a.a.cluster.election.DefaultPreVote    | default: Starting pre-vote from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 13
-2025-07-15 13:19:09.631 |  INFO |       default-raftState-0 | i.a.a.cluster.election.DefaultPreVote    | default: Starting pre-vote from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 13
-2025-07-15 13:19:09.636 |  INFO |       default-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Updating state from PreVoteState to CandidateState (default: Election for term 14 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
-2025-07-15 13:19:09.636 |  INFO |       default-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | default in term 13: Updating state from PreVoteState to CandidateState (default: Election for term 14 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
-2025-07-15 13:19:09.638 |  INFO |       default-raftState-0 | i.a.a.logging.ClusterEventsLogger        | default in term 13: Leader is null
-2025-07-15 13:19:09.638 |  INFO |       default-raftState-0 | i.a.a.logging.ClusterEventsLogger        | default in term 13: Leader is null
-2025-07-15 13:19:09.662 |  INFO |        _admin-raftState-0 | i.a.axonserver.cluster.FollowerState     | _admin in term 13: Timeout in follower state: 2188 ms.
-2025-07-15 13:19:09.662 |  INFO |        _admin-raftState-0 | i.a.axonserver.cluster.FollowerState     | _admin in term 13: Timeout in follower state: 2188 ms.
-2025-07-15 13:19:09.666 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Updating state from FollowerState to PreVoteState (_admin in term 13: Timeout in follower state: 2188 ms.)
-2025-07-15 13:19:09.666 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Updating state from FollowerState to PreVoteState (_admin in term 13: Timeout in follower state: 2188 ms.)
-2025-07-15 13:19:09.675 |  INFO |       default-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Term updated (MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a is starting a new election, so increases its term from 13 to 14).
-2025-07-15 13:19:09.679 |  INFO |        _admin-raftState-0 | i.a.a.cluster.election.DefaultPreVote    | _admin: Starting pre-vote from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 13
-2025-07-15 13:19:09.675 |  INFO |       default-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Term updated (MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a is starting a new election, so increases its term from 13 to 14).
-2025-07-15 13:19:09.679 |  INFO |        _admin-raftState-0 | i.a.a.cluster.election.DefaultPreVote    | _admin: Starting pre-vote from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 13
-2025-07-15 13:19:09.681 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Updating state from PreVoteState to CandidateState (_admin: Election for term 14 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
-2025-07-15 13:19:09.681 |  INFO |       default-raftState-0 | i.a.a.cluster.election.DefaultElection   | default: Starting election from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 14
-2025-07-15 13:19:09.681 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 13: Updating state from PreVoteState to CandidateState (_admin: Election for term 14 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
-2025-07-15 13:19:09.681 |  INFO |       default-raftState-0 | i.a.a.cluster.election.DefaultElection   | default: Starting election from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 14
-2025-07-15 13:19:09.682 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 13: Leader is null
-2025-07-15 13:19:09.682 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 13: Leader is null
-2025-07-15 13:19:09.688 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Term updated (MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 is starting a new election, so increases its term from 13 to 14).
-2025-07-15 13:19:09.688 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Term updated (MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 is starting a new election, so increases its term from 13 to 14).
-2025-07-15 13:19:09.689 |  INFO |        _admin-raftState-0 | i.a.a.cluster.election.DefaultElection   | _admin: Starting election from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 14
-2025-07-15 13:19:09.689 |  INFO |        _admin-raftState-0 | i.a.a.cluster.election.DefaultElection   | _admin: Starting election from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 14
-2025-07-15 13:19:09.701 |  INFO |       default-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from CandidateState to LeaderState (default: Election for term 14 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
-2025-07-15 13:19:09.702 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from CandidateState to LeaderState (_admin: Election for term 14 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
-2025-07-15 13:19:09.701 |  INFO |       default-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from CandidateState to LeaderState (default: Election for term 14 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
-2025-07-15 13:19:09.702 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from CandidateState to LeaderState (_admin: Election for term 14 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
-2025-07-15 13:19:09.797 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 14: (notification) Leader is MaiThanh
-2025-07-15 13:19:09.798 |  INFO |       default-raftState-0 | i.a.a.logging.ClusterEventsLogger        | default in term 14: (notification) Leader is MaiThanh
-2025-07-15 13:19:09.797 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 14: (notification) Leader is MaiThanh
-2025-07-15 13:19:09.798 |  INFO |       default-raftState-0 | i.a.a.logging.ClusterEventsLogger        | default in term 14: (notification) Leader is MaiThanh
-2025-07-15 13:19:09.822 |  INFO |       default-raftState-0 | i.a.a.logging.ClusterEventsLogger        | default in term 14: Leader
-2025-07-15 13:19:09.822 |  INFO |       default-raftState-0 | i.a.a.logging.ClusterEventsLogger        | default in term 14: Leader
-2025-07-15 13:19:09.825 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 14: Leader
-2025-07-15 13:19:09.825 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 14: Leader
-2025-07-15 13:19:09.834 |  INFO |        _admin-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: Start replication thread for 0 peers.
-2025-07-15 13:19:09.834 |  INFO |       default-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: Start replication thread for 0 peers.
-2025-07-15 13:19:09.834 |  INFO |        _admin-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: Start replication thread for 0 peers.
-2025-07-15 13:19:09.837 |  INFO |        _admin-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: Appending info that leader has been elected.
-2025-07-15 13:19:09.834 |  INFO |       default-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: Start replication thread for 0 peers.
-2025-07-15 13:19:09.838 |  INFO |       default-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: Appending info that leader has been elected.
-2025-07-15 13:19:09.837 |  INFO |        _admin-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: Appending info that leader has been elected.
-2025-07-15 13:19:09.838 |  INFO |       default-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: Appending info that leader has been elected.
-2025-07-15 14:05:25.601 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application connected: employee, clientId = 6680@MaiThanh, clientStreamId = 6680@MaiThanh.d997b5aa-b63d-4c01-b49d-7be0185cbd18, context = default
-2025-07-15 14:05:25.601 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application connected: employee, clientId = 6680@MaiThanh, clientStreamId = 6680@MaiThanh.d997b5aa-b63d-4c01-b49d-7be0185cbd18, context = default
-2025-07-15 14:45:03.653 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: employee, clientId = 6680@MaiThanh.d997b5aa-b63d-4c01-b49d-7be0185cbd18, context = default: Platform connection completed by client
-2025-07-15 14:45:03.653 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: employee, clientId = 6680@MaiThanh.d997b5aa-b63d-4c01-b49d-7be0185cbd18, context = default: Platform connection completed by client
-2025-07-15 15:53:07.045 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application connected: employee, clientId = 14632@MaiThanh, clientStreamId = 14632@MaiThanh.acc8f0e5-f384-42d0-9496-c0448383a862, context = default
-2025-07-15 15:53:07.045 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application connected: employee, clientId = 14632@MaiThanh, clientStreamId = 14632@MaiThanh.acc8f0e5-f384-42d0-9496-c0448383a862, context = default
-2025-07-15 15:58:39.414 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: employee, clientId = 14632@MaiThanh.acc8f0e5-f384-42d0-9496-c0448383a862, context = default: Platform connection completed by client
-2025-07-15 15:58:39.414 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: employee, clientId = 14632@MaiThanh.acc8f0e5-f384-42d0-9496-c0448383a862, context = default: Platform connection completed by client
-2025-07-15 15:58:52.353 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway stopped
-2025-07-15 15:58:52.353 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway stopped
-2025-07-15 15:58:52.355 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Stopping the node...
-2025-07-15 15:58:52.355 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Stopping the node...
-2025-07-15 15:58:52.359 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: Stop replication thread
-2025-07-15 15:58:52.359 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: Stop replication thread
-2025-07-15 15:58:52.359 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: last applied: 19
-2025-07-15 15:58:52.359 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: last applied: 19
-2025-07-15 15:58:52.360 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 steps down from Leader role.
-2025-07-15 15:58:52.360 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 14: MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 steps down from Leader role.
-2025-07-15 15:58:52.361 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from LeaderState to IdleState (Node stopped)
-2025-07-15 15:58:52.361 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from LeaderState to IdleState (Node stopped)
-2025-07-15 15:58:52.362 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | _admin: No longer leader
-2025-07-15 15:58:52.362 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | _admin: No longer leader
-2025-07-15 15:58:52.454 |  WARN | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | SQL Error: 90121, SQLState: 90121
-2025-07-15 15:58:52.455 | ERROR | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2025-07-15 15:58:52.471 |  WARN | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | SQL Error: 90121, SQLState: 90121
-2025-07-15 15:58:52.471 | ERROR | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2025-07-15 15:58:52.488 | ERROR | ngApplicationShutdownHook | o.s.orm.jpa.EntityManagerFactoryUtils    | Failed to release JPA EntityManager
-org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1425) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.clearWarnings(JdbcConnection.java:660) ~[h2-2.2.224.jar!/:na]
-	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267) ~[HikariCP-4.0.3.jar!/:na]
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.closeConnection(DatasourceConnectionProviderImpl.java:127) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.NonContextualJdbcConnectionAccess.releaseConnection(NonContextualJdbcConnectionAccess.java:49) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:219) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	... 85 common frames omitted
-Wrapped by: org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:223) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.close(LogicalConnectionManagedImpl.java:261) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.close(JdbcCoordinatorImpl.java:175) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.AbstractSharedSessionContract.close(AbstractSharedSessionContract.java:374) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.closeWithoutOpenChecks(SessionImpl.java:413) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.close(SessionImpl.java:398) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy177.close(Unknown Source) ~[na:na]
-	at org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager(EntityManagerFactoryUtils.java:427) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:444) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy237.getResultList(Unknown Source) ~[na:na]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.configuration.runtime.jpa.$Proxy187.findByReplicationGroupName(Unknown Source) ~[na:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.ContextsJpa.findByReplicationGroupName(fja:72) ~[classes!/:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.CachedContexts.findByReplicationGroupName(daa:212) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager.contextsPerReplicationGroup(paa:103) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager$$FastClassBySpringCGLIB$$1ce40223.invoke(<generated>) ~[classes!/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager$$EnhancerBySpringCGLIB$$616dc01f.contextsPerReplicationGroup(<generated>) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.d(ija:117) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.on(ija:207) ~[classes!/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:344) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:229) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:166) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.config.a.invokeListener(xra:2) ~[classes!/:na]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:429) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.applicationevents.LocalEventPublisher.publishEvent(kma:195) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.cluster.events.ClusterEventPublisher.publishEvent(yea:126) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.d(bia:74) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.d(bia:167) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:66) ~[classes!/:na]
-	at java.base/java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:891) ~[na:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:4) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:433) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:588) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.L(jsa:435) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftGroup.stop(ke:33) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftGroup.stop(qca:384) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.k(bia:63) ~[classes!/:na]
-	at java.base/java.util.concurrent.ConcurrentHashMap.forEach(ConcurrentHashMap.java:1608) ~[na:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.stop(bia:63) ~[classes!/:na]
-	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:235) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:374) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:207) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:130) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1078) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1032) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-2025-07-15 15:58:52.501 |  WARN | ngApplicationShutdownHook | i.a.a.c.AxonServerStandardConfiguration  | Invoking listener public void io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.on(io.axoniq.axonserver.enterprise.cluster.events.ClusterEvents$LeaderStepDown) failed
-org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1425) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:314) ~[h2-2.2.224.jar!/:na]
-	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar!/:na]
-	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar!/:na]
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	... 95 common frames omitted
-Wrapped by: org.hibernate.exception.JDBCConnectionException: could not prepare statement
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.doQuery(Loader.java:956) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2868) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.list(Loader.java:2677) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:218) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1459) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:410) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy237.getResultList(Unknown Source) ~[na:na]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	... 57 common frames omitted
-Wrapped by: org.springframework.dao.DataAccessResourceFailureException: could not prepare statement; nested exception is org.hibernate.exception.JDBCConnectionException: could not prepare statement
-	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:255) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:243) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.configuration.runtime.jpa.$Proxy187.findByReplicationGroupName(Unknown Source) ~[na:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.ContextsJpa.findByReplicationGroupName(fja:72) ~[classes!/:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.CachedContexts.findByReplicationGroupName(daa:212) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager.contextsPerReplicationGroup(paa:103) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager$$FastClassBySpringCGLIB$$1ce40223.invoke(<generated>) ~[classes!/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager$$EnhancerBySpringCGLIB$$616dc01f.contextsPerReplicationGroup(<generated>) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.d(ija:117) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.on(ija:207) ~[classes!/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:344) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:229) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:166) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.config.a.invokeListener(xra:2) ~[classes!/:na]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:429) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.applicationevents.LocalEventPublisher.publishEvent(kma:195) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.cluster.events.ClusterEventPublisher.publishEvent(yea:126) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.d(bia:74) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.d(bia:167) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:66) ~[classes!/:na]
-	at java.base/java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:891) ~[na:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:4) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:433) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:588) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.L(jsa:435) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftGroup.stop(ke:33) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftGroup.stop(qca:384) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.k(bia:63) ~[classes!/:na]
-	at java.base/java.util.concurrent.ConcurrentHashMap.forEach(ConcurrentHashMap.java:1608) ~[na:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.stop(bia:63) ~[classes!/:na]
-	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:235) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:374) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:207) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:130) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1078) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1032) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-2025-07-15 15:58:52.511 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Node stopped.
-2025-07-15 15:58:52.511 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Node stopped.
-2025-07-15 15:58:52.511 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Stopping the node...
-2025-07-15 15:58:52.511 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Stopping the node...
-2025-07-15 15:58:52.512 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: Stop replication thread
-2025-07-15 15:58:52.512 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: Stop replication thread
-2025-07-15 15:58:52.512 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: last applied: 28
-2025-07-15 15:58:52.512 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: last applied: 28
-2025-07-15 15:58:52.512 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a steps down from Leader role.
-2025-07-15 15:58:52.512 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 14: MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a steps down from Leader role.
-2025-07-15 15:58:52.513 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from LeaderState to IdleState (Node stopped)
-2025-07-15 15:58:52.513 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from LeaderState to IdleState (Node stopped)
-2025-07-15 15:58:52.513 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | default: No longer leader
-2025-07-15 15:58:52.513 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | default: No longer leader
-2025-07-15 15:58:52.519 |  WARN | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | SQL Error: 90121, SQLState: 90121
-2025-07-15 15:58:52.519 | ERROR | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2025-07-15 15:58:52.528 |  WARN | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | SQL Error: 90121, SQLState: 90121
-2025-07-15 15:58:52.528 | ERROR | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2025-07-15 15:58:52.529 | ERROR | ngApplicationShutdownHook | o.s.orm.jpa.EntityManagerFactoryUtils    | Failed to release JPA EntityManager
-org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1425) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.clearWarnings(JdbcConnection.java:660) ~[h2-2.2.224.jar!/:na]
-	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267) ~[HikariCP-4.0.3.jar!/:na]
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.closeConnection(DatasourceConnectionProviderImpl.java:127) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.NonContextualJdbcConnectionAccess.releaseConnection(NonContextualJdbcConnectionAccess.java:49) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:219) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	... 85 common frames omitted
-Wrapped by: org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:223) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.close(LogicalConnectionManagedImpl.java:261) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.close(JdbcCoordinatorImpl.java:175) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.AbstractSharedSessionContract.close(AbstractSharedSessionContract.java:374) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.closeWithoutOpenChecks(SessionImpl.java:413) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.close(SessionImpl.java:398) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy177.close(Unknown Source) ~[na:na]
-	at org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager(EntityManagerFactoryUtils.java:427) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:444) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy237.getResultList(Unknown Source) ~[na:na]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.configuration.runtime.jpa.$Proxy187.findByReplicationGroupName(Unknown Source) ~[na:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.ContextsJpa.findByReplicationGroupName(fja:72) ~[classes!/:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.CachedContexts.findByReplicationGroupName(daa:212) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager.contextsPerReplicationGroup(paa:103) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager$$FastClassBySpringCGLIB$$1ce40223.invoke(<generated>) ~[classes!/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager$$EnhancerBySpringCGLIB$$616dc01f.contextsPerReplicationGroup(<generated>) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.d(ija:117) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.on(ija:207) ~[classes!/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:344) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:229) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:166) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.config.a.invokeListener(xra:2) ~[classes!/:na]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:429) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.applicationevents.LocalEventPublisher.publishEvent(kma:195) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.cluster.events.ClusterEventPublisher.publishEvent(yea:126) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.d(bia:74) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.d(bia:167) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:66) ~[classes!/:na]
-	at java.base/java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:891) ~[na:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:4) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:433) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:588) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.L(jsa:435) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftGroup.stop(ke:33) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftGroup.stop(qca:384) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.k(bia:63) ~[classes!/:na]
-	at java.base/java.util.concurrent.ConcurrentHashMap.forEach(ConcurrentHashMap.java:1608) ~[na:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.stop(bia:63) ~[classes!/:na]
-	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:235) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:374) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:207) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:130) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1078) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1032) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-2025-07-15 15:58:52.531 |  WARN | ngApplicationShutdownHook | i.a.a.c.AxonServerStandardConfiguration  | Invoking listener public void io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.on(io.axoniq.axonserver.enterprise.cluster.events.ClusterEvents$LeaderStepDown) failed
-org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1425) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:314) ~[h2-2.2.224.jar!/:na]
-	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar!/:na]
-	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar!/:na]
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	... 95 common frames omitted
-Wrapped by: org.hibernate.exception.JDBCConnectionException: could not prepare statement
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.doQuery(Loader.java:956) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2868) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.Loader.list(Loader.java:2677) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:218) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1459) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:410) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy237.getResultList(Unknown Source) ~[na:na]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	... 57 common frames omitted
-Wrapped by: org.springframework.dao.DataAccessResourceFailureException: could not prepare statement; nested exception is org.hibernate.exception.JDBCConnectionException: could not prepare statement
-	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:255) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:243) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.configuration.runtime.jpa.$Proxy187.findByReplicationGroupName(Unknown Source) ~[na:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.ContextsJpa.findByReplicationGroupName(fja:72) ~[classes!/:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.CachedContexts.findByReplicationGroupName(daa:212) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager.contextsPerReplicationGroup(paa:103) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager$$FastClassBySpringCGLIB$$1ce40223.invoke(<generated>) ~[classes!/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.enterprise.replication.RaftGroupRepositoryManager$$EnhancerBySpringCGLIB$$616dc01f.contextsPerReplicationGroup(<generated>) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.d(ija:117) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.RaftLeaderProviderImpl.on(ija:207) ~[classes!/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:344) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:229) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:166) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.config.a.invokeListener(xra:2) ~[classes!/:na]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:429) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.applicationevents.LocalEventPublisher.publishEvent(kma:195) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.cluster.events.ClusterEventPublisher.publishEvent(yea:126) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.d(bia:74) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.d(bia:167) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:66) ~[classes!/:na]
-	at java.base/java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:891) ~[na:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:4) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:433) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.d(jsa:588) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftNode.L(jsa:435) ~[classes!/:na]
-	at io.axoniq.axonserver.cluster.RaftGroup.stop(ke:33) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftGroup.stop(qca:384) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.k(bia:63) ~[classes!/:na]
-	at java.base/java.util.concurrent.ConcurrentHashMap.forEach(ConcurrentHashMap.java:1608) ~[na:na]
-	at io.axoniq.axonserver.enterprise.replication.GrpcRaftController.stop(bia:63) ~[classes!/:na]
-	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:235) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:374) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:207) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:130) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1078) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1032) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-2025-07-15 15:58:52.533 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Node stopped.
-2025-07-15 15:58:52.533 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Node stopped.
-2025-07-15 15:58:52.538 |  INFO | ngApplicationShutdownHook | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server stopped
-2025-07-15 15:58:52.538 |  INFO | ngApplicationShutdownHook | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server stopped
-2025-07-15 15:58:52.563 |  WARN | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | SQL Error: 90121, SQLState: 90121
-2025-07-15 15:58:52.563 | ERROR | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2025-07-15 15:58:52.573 |  WARN | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | SQL Error: 90121, SQLState: 90121
-2025-07-15 15:58:52.574 | ERROR | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2025-07-15 15:58:52.575 | ERROR | ngApplicationShutdownHook | o.s.orm.jpa.EntityManagerFactoryUtils    | Failed to release JPA EntityManager
-org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1425) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.clearWarnings(JdbcConnection.java:660) ~[h2-2.2.224.jar!/:na]
-	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267) ~[HikariCP-4.0.3.jar!/:na]
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.closeConnection(DatasourceConnectionProviderImpl.java:127) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.NonContextualJdbcConnectionAccess.releaseConnection(NonContextualJdbcConnectionAccess.java:49) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:219) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	... 72 common frames omitted
-Wrapped by: org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:223) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.close(LogicalConnectionManagedImpl.java:261) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.close(JdbcCoordinatorImpl.java:175) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.AbstractSharedSessionContract.close(AbstractSharedSessionContract.java:374) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.closeWithoutOpenChecks(SessionImpl.java:413) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.close(SessionImpl.java:398) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy177.close(Unknown Source) ~[na:na]
-	at org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager(EntityManagerFactoryUtils.java:427) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:444) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy237.getSingleResult(Unknown Source) ~[na:na]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.configuration.runtime.jpa.$Proxy192.findByGroupIdAndNodeName(Unknown Source) ~[na:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.ReplicationGroupMembersJpa.findByGroupIdAndNodeName(zja:11) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.group.ReplicationGroupController.getMyRoleForContext(dla:286) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.group.ReplicationGroupController$$FastClassBySpringCGLIB$$3c757fa0.invoke(<generated>) ~[classes!/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.enterprise.replication.group.ReplicationGroupController$$EnhancerBySpringCGLIB$$76a0eb6.getMyRoleForContext(<generated>) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.StorageResolver.d(nv:94) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.StorageResolver.d(nv:72) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.StorageResolver.k(nv:44) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.IndexManagerRegistry.k(wt:154) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.IndexManagerRegistry.d(wt:55) ~[classes!/:na]
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713) ~[na:na]
-	at io.axoniq.axonserver.localstorage.file.IndexManagerRegistry.getIndexManager(wt:222) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.IndexManagerRegistry.k(wt:75) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.xref.ReadOnlyJumpSkipIndexManager.cleanup(tp:664) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.xref.PrimaryJumpSkipIndexManager.cleanup(mx:521) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.WritableFileStorageTier.close(wq:542) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.FileEventStorageEngine.close(lq:307) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.l.d(ir:925) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.LocalEventStore.k(ir:793) ~[classes!/:na]
-	at java.base/java.util.concurrent.ConcurrentHashMap.forEach(ConcurrentHashMap.java:1608) ~[na:na]
-	at io.axoniq.axonserver.localstorage.LocalEventStore.stop(ir:793) ~[classes!/:na]
-	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:235) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:374) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:207) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:130) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1078) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1032) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-2025-07-15 15:58:52.582 |  WARN | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | SQL Error: 90121, SQLState: 90121
-2025-07-15 15:58:52.582 | ERROR | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2025-07-15 15:58:52.590 |  WARN | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | SQL Error: 90121, SQLState: 90121
-2025-07-15 15:58:52.591 | ERROR | ngApplicationShutdownHook | o.h.engine.jdbc.spi.SqlExceptionHelper   | Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2025-07-15 15:58:52.591 | ERROR | ngApplicationShutdownHook | o.s.orm.jpa.EntityManagerFactoryUtils    | Failed to release JPA EntityManager
-org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.2.224.jar!/:na]
-	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1425) ~[h2-2.2.224.jar!/:na]
-	at org.h2.jdbc.JdbcConnection.clearWarnings(JdbcConnection.java:660) ~[h2-2.2.224.jar!/:na]
-	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267) ~[HikariCP-4.0.3.jar!/:na]
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.closeConnection(DatasourceConnectionProviderImpl.java:127) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.NonContextualJdbcConnectionAccess.releaseConnection(NonContextualJdbcConnectionAccess.java:49) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:219) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	... 72 common frames omitted
-Wrapped by: org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:223) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.close(LogicalConnectionManagedImpl.java:261) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.close(JdbcCoordinatorImpl.java:175) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.AbstractSharedSessionContract.close(AbstractSharedSessionContract.java:374) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.closeWithoutOpenChecks(SessionImpl.java:413) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at org.hibernate.internal.SessionImpl.close(SessionImpl.java:398) ~[hibernate-core-5.6.15.Final.jar!/:5.6.15.Final]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy177.close(Unknown Source) ~[na:na]
-	at org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager(EntityManagerFactoryUtils.java:427) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:444) ~[spring-orm-5.3.31.jar!/:5.3.31]
-	at jdk.proxy2/jdk.proxy2.$Proxy237.getSingleResult(Unknown Source) ~[na:na]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.7.18.jar!/:2.7.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.configuration.runtime.jpa.$Proxy192.findByGroupIdAndNodeName(Unknown Source) ~[na:na]
-	at io.axoniq.axonserver.configuration.runtime.jpa.ReplicationGroupMembersJpa.findByGroupIdAndNodeName(zja:11) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.group.ReplicationGroupController.getMyRoleForContext(dla:286) ~[classes!/:na]
-	at io.axoniq.axonserver.enterprise.replication.group.ReplicationGroupController$$FastClassBySpringCGLIB$$3c757fa0.invoke(<generated>) ~[classes!/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-5.3.31.jar!/:5.3.31]
-	at io.axoniq.axonserver.enterprise.replication.group.ReplicationGroupController$$EnhancerBySpringCGLIB$$76a0eb6.getMyRoleForContext(<generated>) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.StorageResolver.d(nv:94) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.StorageResolver.d(nv:72) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.StorageResolver.k(nv:44) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.IndexManagerRegistry.k(wt:154) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.IndexManagerRegistry.d(wt:55) ~[classes!/:na]
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713) ~[na:na]
-	at io.axoniq.axonserver.localstorage.file.IndexManagerRegistry.getIndexManager(wt:222) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.IndexManagerRegistry.k(wt:75) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.xref.ReadOnlyJumpSkipIndexManager.cleanup(tp:664) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.xref.PrimaryJumpSkipIndexManager.cleanup(mx:521) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.WritableFileStorageTier.close(wq:542) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.file.FileEventStorageEngine.close(lq:307) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.l.d(ir:727) ~[classes!/:na]
-	at io.axoniq.axonserver.localstorage.LocalEventStore.k(ir:793) ~[classes!/:na]
-	at java.base/java.util.concurrent.ConcurrentHashMap.forEach(ConcurrentHashMap.java:1608) ~[na:na]
-	at io.axoniq.axonserver.localstorage.LocalEventStore.stop(ir:793) ~[classes!/:na]
-	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:235) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:374) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:207) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:130) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1078) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1032) ~[spring-context-5.3.31.jar!/:5.3.31]
-	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.18.jar!/:2.7.18]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+2025-07-16 13:22:58.724 |  INFO |                      main | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server started on port: 8224 - no SSL
+2025-07-16 13:22:58.724 |  INFO |                      main | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server started on port: 8224 - no SSL
+2025-07-16 13:22:58.954 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: init replication group
+2025-07-16 13:22:58.954 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: init replication group
+2025-07-16 13:22:58.989 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | _admin: Initializing log
+2025-07-16 13:22:58.989 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | _admin: Initializing log
+2025-07-16 13:22:59.117 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from null to IdleState (Node initialized.)
+2025-07-16 13:22:59.117 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from null to IdleState (Node initialized.)
+2025-07-16 13:22:59.135 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: init replication group
+2025-07-16 13:22:59.135 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: init replication group
+2025-07-16 13:22:59.143 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | default: Initializing log
+2025-07-16 13:22:59.143 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | default: Initializing log
+2025-07-16 13:22:59.155 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from null to IdleState (Node initialized.)
+2025-07-16 13:22:59.155 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from null to IdleState (Node initialized.)
+2025-07-16 13:22:59.159 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group starting
+2025-07-16 13:22:59.159 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group starting
+2025-07-16 13:22:59.161 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Starting the node...
+2025-07-16 13:22:59.161 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Starting the node...
+2025-07-16 13:22:59.172 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from IdleState to FollowerState (Role PRIMARY)
+2025-07-16 13:22:59.172 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from IdleState to FollowerState (Role PRIMARY)
+2025-07-16 13:22:59.186 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "_admin" is scheduled each 1 hour(s).
+2025-07-16 13:22:59.186 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "_admin" is scheduled each 1 hour(s).
+2025-07-16 13:22:59.192 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Node started.
+2025-07-16 13:22:59.192 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Node started.
+2025-07-16 13:22:59.194 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group started
+2025-07-16 13:22:59.194 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group started
+2025-07-16 13:22:59.194 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: Replication group starting
+2025-07-16 13:22:59.194 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: Replication group starting
+2025-07-16 13:22:59.198 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | Replication group controller running
+2025-07-16 13:22:59.198 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | Replication group controller running
+2025-07-16 13:22:59.212 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: starting event store default
+2025-07-16 13:22:59.212 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: starting event store default
+2025-07-16 13:22:59.429 |  INFO |                      main | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway started on port: 8124 - no SSL
+2025-07-16 13:22:59.429 |  INFO |                      main | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway started on port: 8124 - no SSL
+2025-07-16 13:22:59.469 |  INFO |                      main | o.s.b.w.embedded.tomcat.TomcatWebServer  | Tomcat started on port(s): 8024 (http) with context path ''
+2025-07-16 13:22:59.469 |  INFO |                      main | o.s.b.w.embedded.tomcat.TomcatWebServer  | Tomcat started on port(s): 8024 (http) with context path ''
+2025-07-16 13:22:59.531 |  INFO |                      main | io.axoniq.axonserver.AxonServer          | Started AxonServer in 30.738 seconds (JVM running for 31.673)
+2025-07-16 13:22:59.531 |  INFO |                      main | io.axoniq.axonserver.AxonServer          | Started AxonServer in 30.738 seconds (JVM running for 31.673)
+2025-07-16 13:23:00.022 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: Event store started default
+2025-07-16 13:23:00.022 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: Event store started default
+2025-07-16 13:23:00.026 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Starting the node...
+2025-07-16 13:23:00.026 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Starting the node...
+2025-07-16 13:23:00.038 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from IdleState to FollowerState (Role PRIMARY)
+2025-07-16 13:23:00.038 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from IdleState to FollowerState (Role PRIMARY)
+2025-07-16 13:23:00.040 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "default" is scheduled each 1 hour(s).
+2025-07-16 13:23:00.040 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "default" is scheduled each 1 hour(s).
+2025-07-16 13:23:00.041 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Node started.
+2025-07-16 13:23:00.041 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Node started.
+2025-07-16 13:23:00.042 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftController   | default: Replication group started
+2025-07-16 13:23:00.042 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftController   | default: Replication group started
+2025-07-16 13:23:01.177 |  INFO |        _admin-raftState-0 | i.a.axonserver.cluster.FollowerState     | _admin in term 14: Timeout in follower state: 2000 ms.
+2025-07-16 13:23:01.177 |  INFO |        _admin-raftState-0 | i.a.axonserver.cluster.FollowerState     | _admin in term 14: Timeout in follower state: 2000 ms.
+2025-07-16 13:23:01.233 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from FollowerState to PreVoteState (_admin in term 14: Timeout in follower state: 2000 ms.)
+2025-07-16 13:23:01.233 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from FollowerState to PreVoteState (_admin in term 14: Timeout in follower state: 2000 ms.)
+2025-07-16 13:23:01.475 |  INFO |        _admin-raftState-0 | i.a.a.cluster.election.DefaultPreVote    | _admin: Starting pre-vote from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 14
+2025-07-16 13:23:01.475 |  INFO |        _admin-raftState-0 | i.a.a.cluster.election.DefaultPreVote    | _admin: Starting pre-vote from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 14
+2025-07-16 13:23:01.484 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from PreVoteState to CandidateState (_admin: Election for term 15 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
+2025-07-16 13:23:01.484 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 14: Updating state from PreVoteState to CandidateState (_admin: Election for term 15 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
+2025-07-16 13:23:01.487 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 14: Leader is null
+2025-07-16 13:23:01.487 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 14: Leader is null
+2025-07-16 13:23:01.534 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Term updated (MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 is starting a new election, so increases its term from 14 to 15).
+2025-07-16 13:23:01.534 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Term updated (MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 is starting a new election, so increases its term from 14 to 15).
+2025-07-16 13:23:01.535 |  INFO |        _admin-raftState-0 | i.a.a.cluster.election.DefaultElection   | _admin: Starting election from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 15
+2025-07-16 13:23:01.535 |  INFO |        _admin-raftState-0 | i.a.a.cluster.election.DefaultElection   | _admin: Starting election from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 15
+2025-07-16 13:23:01.553 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Updating state from CandidateState to LeaderState (_admin: Election for term 15 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
+2025-07-16 13:23:01.553 |  INFO |        _admin-raftState-0 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Updating state from CandidateState to LeaderState (_admin: Election for term 15 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
+2025-07-16 13:23:01.626 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 15: (notification) Leader is MaiThanh
+2025-07-16 13:23:01.626 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 15: (notification) Leader is MaiThanh
+2025-07-16 13:23:01.642 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 15: Leader
+2025-07-16 13:23:01.642 |  INFO |        _admin-raftState-0 | i.a.a.logging.ClusterEventsLogger        | _admin in term 15: Leader
+2025-07-16 13:23:01.648 |  INFO |        _admin-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: Start replication thread for 0 peers.
+2025-07-16 13:23:01.648 |  INFO |        _admin-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: Start replication thread for 0 peers.
+2025-07-16 13:23:01.651 |  INFO |        _admin-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: Appending info that leader has been elected.
+2025-07-16 13:23:01.651 |  INFO |        _admin-raftState-0 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: Appending info that leader has been elected.
+2025-07-16 13:23:02.299 |  INFO |       default-raftState-1 | i.a.axonserver.cluster.FollowerState     | default in term 14: Timeout in follower state: 2260 ms.
+2025-07-16 13:23:02.299 |  INFO |       default-raftState-1 | i.a.axonserver.cluster.FollowerState     | default in term 14: Timeout in follower state: 2260 ms.
+2025-07-16 13:23:02.300 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from FollowerState to PreVoteState (default in term 14: Timeout in follower state: 2260 ms.)
+2025-07-16 13:23:02.300 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from FollowerState to PreVoteState (default in term 14: Timeout in follower state: 2260 ms.)
+2025-07-16 13:23:02.305 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | default: Starting pre-vote from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 14
+2025-07-16 13:23:02.305 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | default: Starting pre-vote from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 14
+2025-07-16 13:23:02.306 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from PreVoteState to CandidateState (default: Election for term 15 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
+2025-07-16 13:23:02.306 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 14: Updating state from PreVoteState to CandidateState (default: Election for term 15 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
+2025-07-16 13:23:02.307 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 14: Leader is null
+2025-07-16 13:23:02.307 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 14: Leader is null
+2025-07-16 13:23:02.342 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Term updated (MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a is starting a new election, so increases its term from 14 to 15).
+2025-07-16 13:23:02.342 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Term updated (MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a is starting a new election, so increases its term from 14 to 15).
+2025-07-16 13:23:02.343 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultElection   | default: Starting election from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 15
+2025-07-16 13:23:02.343 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultElection   | default: Starting election from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 15
+2025-07-16 13:23:02.343 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Updating state from CandidateState to LeaderState (default: Election for term 15 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
+2025-07-16 13:23:02.343 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Updating state from CandidateState to LeaderState (default: Election for term 15 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
+2025-07-16 13:23:02.395 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 15: (notification) Leader is MaiThanh
+2025-07-16 13:23:02.395 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 15: (notification) Leader is MaiThanh
+2025-07-16 13:23:02.401 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 15: Leader
+2025-07-16 13:23:02.401 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 15: Leader
+2025-07-16 13:23:02.403 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: Start replication thread for 0 peers.
+2025-07-16 13:23:02.403 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: Start replication thread for 0 peers.
+2025-07-16 13:23:02.403 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: Appending info that leader has been elected.
+2025-07-16 13:23:02.403 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: Appending info that leader has been elected.
+2025-07-16 13:24:11.444 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway stopped
+2025-07-16 13:24:11.444 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway stopped
+2025-07-16 13:24:11.448 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Stopping the node...
+2025-07-16 13:24:11.448 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Stopping the node...
+2025-07-16 13:24:11.451 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: Stop replication thread
+2025-07-16 13:24:11.451 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: Stop replication thread
+2025-07-16 13:24:11.452 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: last applied: 20
+2025-07-16 13:24:11.452 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: last applied: 20
+2025-07-16 13:24:11.457 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 steps down from Leader role.
+2025-07-16 13:24:11.457 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 15: MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 steps down from Leader role.
+2025-07-16 13:24:11.458 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Updating state from LeaderState to IdleState (Node stopped)
+2025-07-16 13:24:11.458 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Updating state from LeaderState to IdleState (Node stopped)
+2025-07-16 13:24:11.460 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | _admin: No longer leader
+2025-07-16 13:24:11.460 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | _admin: No longer leader
+2025-07-16 13:24:11.657 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Node stopped.
+2025-07-16 13:24:11.657 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 15: Node stopped.
+2025-07-16 13:24:11.658 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Stopping the node...
+2025-07-16 13:24:11.658 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Stopping the node...
+2025-07-16 13:24:11.658 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: Stop replication thread
+2025-07-16 13:24:11.658 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: Stop replication thread
+2025-07-16 13:24:11.659 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: last applied: 29
+2025-07-16 13:24:11.659 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: last applied: 29
+2025-07-16 13:24:11.659 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a steps down from Leader role.
+2025-07-16 13:24:11.659 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 15: MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a steps down from Leader role.
+2025-07-16 13:24:11.659 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Updating state from LeaderState to IdleState (Node stopped)
+2025-07-16 13:24:11.659 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Updating state from LeaderState to IdleState (Node stopped)
+2025-07-16 13:24:11.660 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | default: No longer leader
+2025-07-16 13:24:11.660 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | default: No longer leader
+2025-07-16 13:24:11.672 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Node stopped.
+2025-07-16 13:24:11.672 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 15: Node stopped.
+2025-07-16 13:24:11.677 |  INFO | ngApplicationShutdownHook | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server stopped
+2025-07-16 13:24:11.677 |  INFO | ngApplicationShutdownHook | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server stopped

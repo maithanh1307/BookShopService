@@ -49,3 +49,28 @@
     connect redis to docker
         docker exec -it redis
         docker exec -it redis redis-cli
+**MESSAGE QUEUE
+- tuân thủ theo cơ chế FIFO(first in fisrt out)
+- giúp cho các service có thể giao tiếp với nhau một cách mượt mà
+- Producer
+    đại diện cho một cái service gửi request
+- consumer
+    người nhận message và xử lí nhứng cái message đó
+- một cái service có thể vừa làm producer và consumer
+**ƯU ĐIỂM MESSAGE QUEUE
+- dễ scaling hệ thống
+- phân thán hệ thống
+- đảm bảo duration/recovery
+- hỗ trợ rate limit, batch process
+**NHƯỢC ĐIỂM
+- khó xử lí đồng bộ
+- làm hệ thống phức tạp hơn
+- cần đảm bảo message format
+- cần Monitoring Queue
+- một số message queue được dùng hiện nay:
+    rabbitMQ, Kafka, Amazon SQS,...
+    kafka là open source nên không mất phí
+
+**APACHE KAFKA
+- hệ thống pub/sub phân tán
+- được viết bằng java và scala
