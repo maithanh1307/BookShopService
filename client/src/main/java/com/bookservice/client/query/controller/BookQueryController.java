@@ -3,13 +3,11 @@ package com.bookservice.client.query.controller;
 import com.bookservice.client.query.model.BookResponseModel;
 import com.bookservice.client.query.queries.GetAllBookQuery;
 import com.bookservice.client.query.queries.GetBookDetailQuery;
+import com.bookservice.commonservice.services.KafkaService;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -21,6 +19,9 @@ public class BookQueryController {
     @Autowired
     private QueryGateway queryGateway;
 
+    @Autowired
+    private KafkaService kafkaService;
+
     @GetMapping
     public List<BookResponseModel> getAllBooks() {
         GetAllBookQuery query = new GetAllBookQuery();
@@ -31,6 +32,11 @@ public class BookQueryController {
     public BookResponseModel getBookById(@PathVariable String bookId) {
         GetBookDetailQuery query = new GetBookDetailQuery(bookId);
         return queryGateway.query(query, ResponseTypes.instanceOf(BookResponseModel.class)).join();
+    }
+
+    @PostMapping("/sendMessage")
+    public void sendMessage(@RequestBody String message) {
+        kafkaService.sendMessage("test", message);
     }
 
 
