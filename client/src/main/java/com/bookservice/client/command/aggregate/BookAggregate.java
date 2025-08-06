@@ -6,6 +6,8 @@ import com.bookservice.client.command.command.UpdateBookCommand;
 import com.bookservice.client.command.event.BookCreatedEvent;
 import com.bookservice.client.command.event.BookDeletedEvent;
 import com.bookservice.client.command.event.BookUpdatedEvent;
+import com.bookservice.commonservice.command.UpdateStatusBookCommand;
+import com.bookservice.commonservice.event.BookUpdateStatusEvent;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -52,6 +54,13 @@ public class BookAggregate {
         AggregateLifecycle.apply(bookDeletedEvent);
     }
 
+    @CommandHandler
+    public void handler(UpdateStatusBookCommand command) {
+        BookUpdateStatusEvent bookUpdateStatusEvent = new BookUpdateStatusEvent();
+        BeanUtils.copyProperties(command, bookUpdateStatusEvent);
+        AggregateLifecycle.apply(bookUpdateStatusEvent);
+    }
+
 //    cap nhap trang thai cua aggregate
     @EventSourcingHandler
     public void on(BookCreatedEvent event) {
@@ -72,5 +81,11 @@ public class BookAggregate {
     @EventSourcingHandler
     public void on(BookDeletedEvent event) {
         this.id = event.getId();
+    }
+
+    @EventSourcingHandler
+    public void on(BookUpdateStatusEvent event) {
+        this.id = event.getBookId();
+        this.isReady = event.getIsReady();
     }
 }

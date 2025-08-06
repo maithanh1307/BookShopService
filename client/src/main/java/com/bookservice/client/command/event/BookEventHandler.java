@@ -2,6 +2,7 @@ package com.bookservice.client.command.event;
 
 import com.bookservice.client.command.data.Book;
 import com.bookservice.client.command.data.BookRepository;
+import com.bookservice.commonservice.event.BookUpdateStatusEvent;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,17 @@ public class BookEventHandler {
             book.setName(event.getName());
             book.setIsReady(event.getIsReady());
 
+            bookRepository.save(book);
+        }
+    }
+
+    @EventHandler
+    public void on(BookUpdateStatusEvent event) {
+        Optional<Book> oldBook = bookRepository.findById(event.getBookId());
+
+        if (oldBook.isPresent()) {
+            Book book = oldBook.get();
+            book.setIsReady(event.getIsReady());
             bookRepository.save(book);
         }
     }
