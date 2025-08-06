@@ -74,3 +74,15 @@
 **APACHE KAFKA
 - hệ thống pub/sub phân tán
 - được viết bằng java và scala
+
+**DISTRIBUTED TRANSACTION
+- bao gồm 4 tính chất của ACID
+    atomicity
+    consistency
+    isolation
+    durability
+
+**SAGA PATTERN
+- gồm có 2 phương thức: choreography, orchestration
+    choreography: event based
+    orchestration: command based - điều phối các local transaction

@@ -1,130 +1,115 @@
-2025-08-01 12:02:57.786 |  INFO |                      main | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server started on port: 8224 - no SSL
-2025-08-01 12:02:57.786 |  INFO |                      main | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server started on port: 8224 - no SSL
-2025-08-01 12:02:57.887 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: init replication group
-2025-08-01 12:02:57.887 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: init replication group
-2025-08-01 12:02:57.897 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | _admin: Initializing log
-2025-08-01 12:02:57.897 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | _admin: Initializing log
-2025-08-01 12:02:57.939 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Updating state from null to IdleState (Node initialized.)
-2025-08-01 12:02:57.939 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Updating state from null to IdleState (Node initialized.)
-2025-08-01 12:02:57.942 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: init replication group
-2025-08-01 12:02:57.942 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: init replication group
-2025-08-01 12:02:57.944 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | default: Initializing log
-2025-08-01 12:02:57.944 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | default: Initializing log
-2025-08-01 12:02:57.948 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Updating state from null to IdleState (Node initialized.)
-2025-08-01 12:02:57.948 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Updating state from null to IdleState (Node initialized.)
-2025-08-01 12:02:57.948 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group starting
-2025-08-01 12:02:57.948 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group starting
-2025-08-01 12:02:57.949 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Starting the node...
-2025-08-01 12:02:57.949 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Starting the node...
-2025-08-01 12:02:57.954 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Updating state from IdleState to FollowerState (Role PRIMARY)
-2025-08-01 12:02:57.954 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Updating state from IdleState to FollowerState (Role PRIMARY)
-2025-08-01 12:02:57.957 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "_admin" is scheduled each 1 hour(s).
-2025-08-01 12:02:57.957 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "_admin" is scheduled each 1 hour(s).
-2025-08-01 12:02:57.957 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Node started.
-2025-08-01 12:02:57.957 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Node started.
-2025-08-01 12:02:57.959 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group started
-2025-08-01 12:02:57.959 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group started
-2025-08-01 12:02:57.959 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: Replication group starting
-2025-08-01 12:02:57.959 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: Replication group starting
-2025-08-01 12:02:57.959 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | Replication group controller running
-2025-08-01 12:02:57.959 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | Replication group controller running
-2025-08-01 12:02:57.963 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: starting event store default
-2025-08-01 12:02:57.963 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: starting event store default
-2025-08-01 12:02:58.023 |  INFO |                      main | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway started on port: 8124 - no SSL
-2025-08-01 12:02:58.023 |  INFO |                      main | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway started on port: 8124 - no SSL
-2025-08-01 12:02:58.039 |  INFO |                      main | o.s.b.w.embedded.tomcat.TomcatWebServer  | Tomcat started on port(s): 8024 (http) with context path ''
-2025-08-01 12:02:58.039 |  INFO |                      main | o.s.b.w.embedded.tomcat.TomcatWebServer  | Tomcat started on port(s): 8024 (http) with context path ''
-2025-08-01 12:02:58.061 |  INFO |                      main | io.axoniq.axonserver.AxonServer          | Started AxonServer in 16.667 seconds (JVM running for 17.879)
-2025-08-01 12:02:58.061 |  INFO |                      main | io.axoniq.axonserver.AxonServer          | Started AxonServer in 16.667 seconds (JVM running for 17.879)
-2025-08-01 12:02:58.198 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: Event store started default
-2025-08-01 12:02:58.198 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: Event store started default
-2025-08-01 12:02:58.198 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Starting the node...
-2025-08-01 12:02:58.198 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Starting the node...
-2025-08-01 12:02:58.198 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Updating state from IdleState to FollowerState (Role PRIMARY)
-2025-08-01 12:02:58.198 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Updating state from IdleState to FollowerState (Role PRIMARY)
-2025-08-01 12:02:58.199 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "default" is scheduled each 1 hour(s).
-2025-08-01 12:02:58.199 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "default" is scheduled each 1 hour(s).
-2025-08-01 12:02:58.199 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Node started.
-2025-08-01 12:02:58.199 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Node started.
-2025-08-01 12:02:58.200 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftController   | default: Replication group started
-2025-08-01 12:02:58.200 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftController   | default: Replication group started
-2025-08-01 12:03:00.154 |  INFO |        _admin-raftState-1 | i.a.axonserver.cluster.FollowerState     | _admin in term 18: Timeout in follower state: 2199 ms.
-2025-08-01 12:03:00.154 |  INFO |        _admin-raftState-1 | i.a.axonserver.cluster.FollowerState     | _admin in term 18: Timeout in follower state: 2199 ms.
-2025-08-01 12:03:00.166 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Updating state from FollowerState to PreVoteState (_admin in term 18: Timeout in follower state: 2199 ms.)
-2025-08-01 12:03:00.166 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Updating state from FollowerState to PreVoteState (_admin in term 18: Timeout in follower state: 2199 ms.)
-2025-08-01 12:03:00.186 |  INFO |        _admin-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | _admin: Starting pre-vote from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 18
-2025-08-01 12:03:00.186 |  INFO |        _admin-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | _admin: Starting pre-vote from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 18
-2025-08-01 12:03:00.190 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Updating state from PreVoteState to CandidateState (_admin: Election for term 19 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
-2025-08-01 12:03:00.190 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 18: Updating state from PreVoteState to CandidateState (_admin: Election for term 19 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
-2025-08-01 12:03:00.191 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 18: Leader is null
-2025-08-01 12:03:00.191 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 18: Leader is null
-2025-08-01 12:03:00.210 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Term updated (MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 is starting a new election, so increases its term from 18 to 19).
-2025-08-01 12:03:00.210 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Term updated (MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 is starting a new election, so increases its term from 18 to 19).
-2025-08-01 12:03:00.211 |  INFO |        _admin-raftState-1 | i.a.a.cluster.election.DefaultElection   | _admin: Starting election from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 19
-2025-08-01 12:03:00.211 |  INFO |        _admin-raftState-1 | i.a.a.cluster.election.DefaultElection   | _admin: Starting election from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 19
-2025-08-01 12:03:00.218 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from CandidateState to LeaderState (_admin: Election for term 19 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
-2025-08-01 12:03:00.218 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from CandidateState to LeaderState (_admin: Election for term 19 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
-2025-08-01 12:03:00.241 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 19: (notification) Leader is MaiThanh
-2025-08-01 12:03:00.241 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 19: (notification) Leader is MaiThanh
-2025-08-01 12:03:00.247 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 19: Leader
-2025-08-01 12:03:00.247 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 19: Leader
-2025-08-01 12:03:00.249 |  INFO |        _admin-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: Start replication thread for 0 peers.
-2025-08-01 12:03:00.249 |  INFO |        _admin-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: Start replication thread for 0 peers.
-2025-08-01 12:03:00.249 |  INFO |        _admin-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: Appending info that leader has been elected.
-2025-08-01 12:03:00.249 |  INFO |        _admin-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: Appending info that leader has been elected.
-2025-08-01 12:03:00.611 |  INFO |       default-raftState-1 | i.a.axonserver.cluster.FollowerState     | default in term 18: Timeout in follower state: 2412 ms.
-2025-08-01 12:03:00.611 |  INFO |       default-raftState-1 | i.a.axonserver.cluster.FollowerState     | default in term 18: Timeout in follower state: 2412 ms.
-2025-08-01 12:03:00.611 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Updating state from FollowerState to PreVoteState (default in term 18: Timeout in follower state: 2412 ms.)
-2025-08-01 12:03:00.611 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Updating state from FollowerState to PreVoteState (default in term 18: Timeout in follower state: 2412 ms.)
-2025-08-01 12:03:00.614 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | default: Starting pre-vote from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 18
-2025-08-01 12:03:00.614 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | default: Starting pre-vote from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 18
-2025-08-01 12:03:00.614 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Updating state from PreVoteState to CandidateState (default: Election for term 19 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
-2025-08-01 12:03:00.614 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 18: Updating state from PreVoteState to CandidateState (default: Election for term 19 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
-2025-08-01 12:03:00.614 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 18: Leader is null
-2025-08-01 12:03:00.614 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 18: Leader is null
-2025-08-01 12:03:00.626 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Term updated (MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a is starting a new election, so increases its term from 18 to 19).
-2025-08-01 12:03:00.626 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Term updated (MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a is starting a new election, so increases its term from 18 to 19).
-2025-08-01 12:03:00.627 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultElection   | default: Starting election from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 19
-2025-08-01 12:03:00.627 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultElection   | default: Starting election from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 19
-2025-08-01 12:03:00.628 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from CandidateState to LeaderState (default: Election for term 19 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
-2025-08-01 12:03:00.628 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from CandidateState to LeaderState (default: Election for term 19 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
-2025-08-01 12:03:00.654 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 19: (notification) Leader is MaiThanh
-2025-08-01 12:03:00.654 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 19: (notification) Leader is MaiThanh
-2025-08-01 12:03:00.659 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 19: Leader
-2025-08-01 12:03:00.659 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 19: Leader
-2025-08-01 12:03:00.660 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: Start replication thread for 0 peers.
-2025-08-01 12:03:00.660 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: Start replication thread for 0 peers.
-2025-08-01 12:03:00.661 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: Appending info that leader has been elected.
-2025-08-01 12:03:00.661 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: Appending info that leader has been elected.
-2025-08-01 13:56:36.102 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway stopped
-2025-08-01 13:56:36.102 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway stopped
-2025-08-01 13:56:36.108 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Stopping the node...
-2025-08-01 13:56:36.108 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Stopping the node...
-2025-08-01 13:56:36.111 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: Stop replication thread
-2025-08-01 13:56:36.111 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: Stop replication thread
-2025-08-01 13:56:36.112 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: last applied: 24
-2025-08-01 13:56:36.112 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: last applied: 24
-2025-08-01 13:56:36.114 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 steps down from Leader role.
-2025-08-01 13:56:36.114 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 19: MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 steps down from Leader role.
-2025-08-01 13:56:36.114 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from LeaderState to IdleState (Node stopped)
-2025-08-01 13:56:36.114 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from LeaderState to IdleState (Node stopped)
-2025-08-01 13:56:36.115 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | _admin: No longer leader
-2025-08-01 13:56:36.115 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | _admin: No longer leader
-2025-08-01 13:56:36.177 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Node stopped.
-2025-08-01 13:56:36.177 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Node stopped.
-2025-08-01 13:56:36.178 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Stopping the node...
-2025-08-01 13:56:36.178 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Stopping the node...
-2025-08-01 13:56:36.178 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: Stop replication thread
-2025-08-01 13:56:36.178 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: Stop replication thread
-2025-08-01 13:56:36.178 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: last applied: 33
-2025-08-01 13:56:36.178 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: last applied: 33
-2025-08-01 13:56:36.179 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a steps down from Leader role.
-2025-08-01 13:56:36.179 |  INFO | ngApplicationShutdownHook | i.axoniq.axonserver.cluster.LeaderState  | default in term 19: MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a steps down from Leader role.
-2025-08-01 13:56:36.179 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from LeaderState to IdleState (Node stopped)
-2025-08-01 13:56:36.179 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from LeaderState to IdleState (Node stopped)
-2025-08-01 13:56:36.179 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | default: No longer leader
-2025-08-01 13:56:36.179 |  INFO | ngApplicationShutdownHook | i.a.a.logging.ClusterEventsLogger        | default: No longer leader
-2025-08-01 13:56:36.186 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Node stopped.
-2025-08-01 13:56:36.186 |  INFO | ngApplicationShutdownHook | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Node stopped.
-2025-08-01 13:56:36.189 |  INFO | ngApplicationShutdownHook | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server stopped
-2025-08-01 13:56:36.189 |  INFO | ngApplicationShutdownHook | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server stopped
+2025-08-06 12:26:41.127 |  INFO |                      main | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server started on port: 8224 - no SSL
+2025-08-06 12:26:41.127 |  INFO |                      main | i.a.a.e.c.i.MessagingClusterServer       | Axon Server Cluster Server started on port: 8224 - no SSL
+2025-08-06 12:26:41.322 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: init replication group
+2025-08-06 12:26:41.322 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: init replication group
+2025-08-06 12:26:41.343 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | _admin: Initializing log
+2025-08-06 12:26:41.343 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | _admin: Initializing log
+2025-08-06 12:26:41.467 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from null to IdleState (Node initialized.)
+2025-08-06 12:26:41.467 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from null to IdleState (Node initialized.)
+2025-08-06 12:26:41.479 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: init replication group
+2025-08-06 12:26:41.479 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: init replication group
+2025-08-06 12:26:41.484 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | default: Initializing log
+2025-08-06 12:26:41.484 |  INFO |                      main | i.a.a.c.r.file.PrimaryLogEntryStore      | default: Initializing log
+2025-08-06 12:26:41.496 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from null to IdleState (Node initialized.)
+2025-08-06 12:26:41.496 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from null to IdleState (Node initialized.)
+2025-08-06 12:26:41.498 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group starting
+2025-08-06 12:26:41.498 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group starting
+2025-08-06 12:26:41.500 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Starting the node...
+2025-08-06 12:26:41.500 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Starting the node...
+2025-08-06 12:26:41.510 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from IdleState to FollowerState (Role PRIMARY)
+2025-08-06 12:26:41.510 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from IdleState to FollowerState (Role PRIMARY)
+2025-08-06 12:26:41.521 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "_admin" is scheduled each 1 hour(s).
+2025-08-06 12:26:41.521 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "_admin" is scheduled each 1 hour(s).
+2025-08-06 12:26:41.523 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Node started.
+2025-08-06 12:26:41.523 |  INFO |                      main | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Node started.
+2025-08-06 12:26:41.525 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group started
+2025-08-06 12:26:41.525 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | _admin: Replication group started
+2025-08-06 12:26:41.525 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: Replication group starting
+2025-08-06 12:26:41.525 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | default: Replication group starting
+2025-08-06 12:26:41.528 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | Replication group controller running
+2025-08-06 12:26:41.528 |  INFO |                      main | i.a.a.e.replication.GrpcRaftController   | Replication group controller running
+2025-08-06 12:26:41.539 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: starting event store default
+2025-08-06 12:26:41.539 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: starting event store default
+2025-08-06 12:26:41.722 |  INFO |                      main | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway started on port: 8124 - no SSL
+2025-08-06 12:26:41.722 |  INFO |                      main | io.axoniq.axonserver.grpc.Gateway        | Axon Server Gateway started on port: 8124 - no SSL
+2025-08-06 12:26:41.756 |  INFO |                      main | o.s.b.w.embedded.tomcat.TomcatWebServer  | Tomcat started on port(s): 8024 (http) with context path ''
+2025-08-06 12:26:41.756 |  INFO |                      main | o.s.b.w.embedded.tomcat.TomcatWebServer  | Tomcat started on port(s): 8024 (http) with context path ''
+2025-08-06 12:26:41.804 |  INFO |                      main | io.axoniq.axonserver.AxonServer          | Started AxonServer in 28.591 seconds (JVM running for 29.515)
+2025-08-06 12:26:41.804 |  INFO |                      main | io.axoniq.axonserver.AxonServer          | Started AxonServer in 28.591 seconds (JVM running for 29.515)
+2025-08-06 12:26:42.132 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: Event store started default
+2025-08-06 12:26:42.132 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftGroup        | default: Event store started default
+2025-08-06 12:26:42.133 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Starting the node...
+2025-08-06 12:26:42.133 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Starting the node...
+2025-08-06 12:26:42.134 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from IdleState to FollowerState (Role PRIMARY)
+2025-08-06 12:26:42.134 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from IdleState to FollowerState (Role PRIMARY)
+2025-08-06 12:26:42.135 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "default" is scheduled each 1 hour(s).
+2025-08-06 12:26:42.135 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | The replication log compaction for "default" is scheduled each 1 hour(s).
+2025-08-06 12:26:42.136 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Node started.
+2025-08-06 12:26:42.136 |  INFO |           task-scheduler1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Node started.
+2025-08-06 12:26:42.137 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftController   | default: Replication group started
+2025-08-06 12:26:42.137 |  INFO |           task-scheduler1 | i.a.a.e.replication.GrpcRaftController   | default: Replication group started
+2025-08-06 12:26:43.813 |  INFO |        _admin-raftState-1 | i.a.axonserver.cluster.FollowerState     | _admin in term 19: Timeout in follower state: 2300 ms.
+2025-08-06 12:26:43.813 |  INFO |        _admin-raftState-1 | i.a.axonserver.cluster.FollowerState     | _admin in term 19: Timeout in follower state: 2300 ms.
+2025-08-06 12:26:43.828 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from FollowerState to PreVoteState (_admin in term 19: Timeout in follower state: 2300 ms.)
+2025-08-06 12:26:43.828 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from FollowerState to PreVoteState (_admin in term 19: Timeout in follower state: 2300 ms.)
+2025-08-06 12:26:43.857 |  INFO |        _admin-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | _admin: Starting pre-vote from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 19
+2025-08-06 12:26:43.857 |  INFO |        _admin-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | _admin: Starting pre-vote from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 19
+2025-08-06 12:26:43.861 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from PreVoteState to CandidateState (_admin: Election for term 20 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
+2025-08-06 12:26:43.861 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 19: Updating state from PreVoteState to CandidateState (_admin: Election for term 20 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
+2025-08-06 12:26:43.863 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 19: Leader is null
+2025-08-06 12:26:43.863 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 19: Leader is null
+2025-08-06 12:26:43.887 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 20: Term updated (MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 is starting a new election, so increases its term from 19 to 20).
+2025-08-06 12:26:43.887 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 20: Term updated (MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 is starting a new election, so increases its term from 19 to 20).
+2025-08-06 12:26:43.889 |  INFO |        _admin-raftState-1 | i.a.a.cluster.election.DefaultElection   | _admin: Starting election from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 20
+2025-08-06 12:26:43.889 |  INFO |        _admin-raftState-1 | i.a.a.cluster.election.DefaultElection   | _admin: Starting election from MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 in term 20
+2025-08-06 12:26:43.902 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 20: Updating state from CandidateState to LeaderState (_admin: Election for term 20 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
+2025-08-06 12:26:43.902 |  INFO |        _admin-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | _admin in term 20: Updating state from CandidateState to LeaderState (_admin: Election for term 20 is won by MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7 (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-6496556c-3385-4c66-8a07-ea229676c6b7=true}}))
+2025-08-06 12:26:43.969 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 20: (notification) Leader is MaiThanh
+2025-08-06 12:26:43.969 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 20: (notification) Leader is MaiThanh
+2025-08-06 12:26:43.981 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 20: Leader
+2025-08-06 12:26:43.981 |  INFO |        _admin-raftState-1 | i.a.a.logging.ClusterEventsLogger        | _admin in term 20: Leader
+2025-08-06 12:26:43.986 |  INFO |        _admin-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 20: Start replication thread for 0 peers.
+2025-08-06 12:26:43.986 |  INFO |       default-raftState-1 | i.a.axonserver.cluster.FollowerState     | default in term 19: Timeout in follower state: 1851 ms.
+2025-08-06 12:26:43.986 |  INFO |        _admin-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 20: Start replication thread for 0 peers.
+2025-08-06 12:26:43.988 |  INFO |        _admin-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 20: Appending info that leader has been elected.
+2025-08-06 12:26:43.986 |  INFO |       default-raftState-1 | i.a.axonserver.cluster.FollowerState     | default in term 19: Timeout in follower state: 1851 ms.
+2025-08-06 12:26:43.988 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from FollowerState to PreVoteState (default in term 19: Timeout in follower state: 1851 ms.)
+2025-08-06 12:26:43.988 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from FollowerState to PreVoteState (default in term 19: Timeout in follower state: 1851 ms.)
+2025-08-06 12:26:43.988 |  INFO |        _admin-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | _admin in term 20: Appending info that leader has been elected.
+2025-08-06 12:26:43.993 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | default: Starting pre-vote from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 19
+2025-08-06 12:26:43.993 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultPreVote    | default: Starting pre-vote from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 19
+2025-08-06 12:26:43.994 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from PreVoteState to CandidateState (default: Election for term 20 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
+2025-08-06 12:26:43.994 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 19: Updating state from PreVoteState to CandidateState (default: Election for term 20 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
+2025-08-06 12:26:43.995 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 19: Leader is null
+2025-08-06 12:26:43.995 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 19: Leader is null
+2025-08-06 12:26:43.999 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 20: Term updated (MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a is starting a new election, so increases its term from 19 to 20).
+2025-08-06 12:26:43.999 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 20: Term updated (MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a is starting a new election, so increases its term from 19 to 20).
+2025-08-06 12:26:44.000 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultElection   | default: Starting election from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 20
+2025-08-06 12:26:44.000 |  INFO |       default-raftState-1 | i.a.a.cluster.election.DefaultElection   | default: Starting election from MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a in term 20
+2025-08-06 12:26:44.001 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 20: Updating state from CandidateState to LeaderState (default: Election for term 20 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
+2025-08-06 12:26:44.001 |  INFO |       default-raftState-1 | io.axoniq.axonserver.cluster.RaftNode    | default in term 20: Updating state from CandidateState to LeaderState (default: Election for term 20 is won by MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a (PrimaryAndVotingMajorityStrategy {votes={MaiThanh-81b41738-3dbe-475d-9120-f2e379719a7a=true}}))
+2025-08-06 12:26:44.036 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 20: (notification) Leader is MaiThanh
+2025-08-06 12:26:44.036 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 20: (notification) Leader is MaiThanh
+2025-08-06 12:26:44.041 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 20: Leader
+2025-08-06 12:26:44.041 |  INFO |       default-raftState-1 | i.a.a.logging.ClusterEventsLogger        | default in term 20: Leader
+2025-08-06 12:26:44.042 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 20: Start replication thread for 0 peers.
+2025-08-06 12:26:44.042 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 20: Start replication thread for 0 peers.
+2025-08-06 12:26:44.043 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 20: Appending info that leader has been elected.
+2025-08-06 12:26:44.043 |  INFO |       default-raftState-1 | i.axoniq.axonserver.cluster.LeaderState  | default in term 20: Appending info that leader has been elected.
+2025-08-06 12:30:48.011 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application connected: client, clientId = 2636@MaiThanh, clientStreamId = 2636@MaiThanh.d541b028-4566-469a-b637-a566299f39a7, context = default
+2025-08-06 12:30:48.011 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application connected: client, clientId = 2636@MaiThanh, clientStreamId = 2636@MaiThanh.d541b028-4566-469a-b637-a566299f39a7, context = default
+2025-08-06 12:31:15.249 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application connected: employee, clientId = 5968@MaiThanh, clientStreamId = 5968@MaiThanh.bf2c3752-2e1f-45a2-954d-6a103d7aca0f, context = default
+2025-08-06 12:31:15.249 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application connected: employee, clientId = 5968@MaiThanh, clientStreamId = 5968@MaiThanh.bf2c3752-2e1f-45a2-954d-6a103d7aca0f, context = default
+2025-08-06 12:36:14.255 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application connected: borrowing, clientId = 26912@MaiThanh, clientStreamId = 26912@MaiThanh.576e8fa7-8316-4879-8b16-176b1337d957, context = default
+2025-08-06 12:36:14.255 |  INFO |           grpc-executor-2 | i.a.a.logging.TopologyEventsLogger       | Application connected: borrowing, clientId = 26912@MaiThanh, clientStreamId = 26912@MaiThanh.576e8fa7-8316-4879-8b16-176b1337d957, context = default
+2025-08-06 12:39:00.242 |  WARN |           grpc-executor-3 | i.a.a.message.command.CommandDispatcher  | No Handler for command: com.bookservice.borrowing.command.command.CreateBorrowingCommand
+2025-08-06 12:43:01.076 |  INFO |           grpc-executor-3 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: borrowing, clientId = 26912@MaiThanh.576e8fa7-8316-4879-8b16-176b1337d957, context = default: Platform connection completed by client
+2025-08-06 12:43:01.076 |  INFO |           grpc-executor-3 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: borrowing, clientId = 26912@MaiThanh.576e8fa7-8316-4879-8b16-176b1337d957, context = default: Platform connection completed by client
+2025-08-06 12:43:16.320 |  INFO |           grpc-executor-4 | i.a.a.logging.TopologyEventsLogger       | Application connected: borrowing, clientId = 14048@MaiThanh, clientStreamId = 14048@MaiThanh.3c363f59-ad0c-4779-be27-a1617ab32db3, context = default
+2025-08-06 12:43:16.320 |  INFO |           grpc-executor-4 | i.a.a.logging.TopologyEventsLogger       | Application connected: borrowing, clientId = 14048@MaiThanh, clientStreamId = 14048@MaiThanh.3c363f59-ad0c-4779-be27-a1617ab32db3, context = default
+2025-08-06 12:47:28.650 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: employee, clientId = 5968@MaiThanh.bf2c3752-2e1f-45a2-954d-6a103d7aca0f, context = default: Platform connection completed by client
+2025-08-06 12:47:28.650 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: employee, clientId = 5968@MaiThanh.bf2c3752-2e1f-45a2-954d-6a103d7aca0f, context = default: Platform connection completed by client
+2025-08-06 12:47:28.904 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: client, clientId = 2636@MaiThanh.d541b028-4566-469a-b637-a566299f39a7, context = default: Platform connection completed by client
+2025-08-06 12:47:28.904 |  INFO |           grpc-executor-1 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: client, clientId = 2636@MaiThanh.d541b028-4566-469a-b637-a566299f39a7, context = default: Platform connection completed by client
+2025-08-06 12:47:29.430 |  INFO |           grpc-executor-3 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: borrowing, clientId = 14048@MaiThanh.3c363f59-ad0c-4779-be27-a1617ab32db3, context = default: Platform connection completed by client
+2025-08-06 12:47:29.430 |  INFO |           grpc-executor-3 | i.a.a.logging.TopologyEventsLogger       | Application disconnected: borrowing, clientId = 14048@MaiThanh.3c363f59-ad0c-4779-be27-a1617ab32db3, context = default: Platform connection completed by client
