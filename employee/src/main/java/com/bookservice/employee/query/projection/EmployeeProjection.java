@@ -1,10 +1,11 @@
 package com.bookservice.employee.query.projection;
 
+import com.bookservice.commonservice.model.EmployeeResponseCommonModel;
 import com.bookservice.employee.command.data.Employee;
 import com.bookservice.employee.command.data.EmployeeRepository;
 import com.bookservice.employee.query.model.EmployeeRespsonseModel;
 import com.bookservice.employee.query.queries.GetAllEmployeeQuery;
-import com.bookservice.employee.query.queries.GetDetailEmployeeQuery;
+import com.bookservice.commonservice.queries.GetDetailEmployeeQuery;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,11 +31,14 @@ public class EmployeeProjection {
 
 
     @QueryHandler
-    public EmployeeRespsonseModel handle(GetDetailEmployeeQuery getDetailEmployeeQuery) throws Exception {
+    public EmployeeResponseCommonModel handle(GetDetailEmployeeQuery getDetailEmployeeQuery) throws Exception {
         Employee employee = employeeRepository.findById(getDetailEmployeeQuery.getId()).orElseThrow(() -> new Exception("Employee not found"));
-        EmployeeRespsonseModel employeeRespsonseModel = new EmployeeRespsonseModel();
-        BeanUtils.copyProperties(employee, employeeRespsonseModel);
-        return employeeRespsonseModel;
+
+        EmployeeResponseCommonModel model = new EmployeeResponseCommonModel();
+
+        BeanUtils.copyProperties(employee, model);
+
+        return model;
     }
 
 

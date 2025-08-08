@@ -6,11 +6,14 @@ import com.bookservice.client.command.command.UpdateBookCommand;
 import com.bookservice.client.command.event.BookCreatedEvent;
 import com.bookservice.client.command.event.BookDeletedEvent;
 import com.bookservice.client.command.event.BookUpdatedEvent;
+import com.bookservice.commonservice.command.RollbackStatusBookCommand;
 import com.bookservice.commonservice.command.UpdateStatusBookCommand;
+import com.bookservice.commonservice.event.BookRollBackStatusEvent;
 import com.bookservice.commonservice.event.BookUpdateStatusEvent;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
@@ -22,6 +25,7 @@ import org.springframework.beans.BeanUtils;
 @NoArgsConstructor
 @Getter
 @Setter
+@Slf4j
 public class BookAggregate {
 //    dinh dang khoa duy nhat
     @AggregateIdentifier
@@ -54,11 +58,30 @@ public class BookAggregate {
         AggregateLifecycle.apply(bookDeletedEvent);
     }
 
+//    @CommandHandler
+//    public void handler(UpdateStatusBookCommand command) {
+//        BookUpdateStatusEvent bookUpdateStatusEvent = new BookUpdateStatusEvent();
+//        BeanUtils.copyProperties(command, bookUpdateStatusEvent);
+//        AggregateLifecycle.apply(bookUpdateStatusEvent);
+//    }
     @CommandHandler
     public void handler(UpdateStatusBookCommand command) {
-        BookUpdateStatusEvent bookUpdateStatusEvent = new BookUpdateStatusEvent();
-        BeanUtils.copyProperties(command, bookUpdateStatusEvent);
-        AggregateLifecycle.apply(bookUpdateStatusEvent);
+        BookUpdateStatusEvent event = new BookUpdateStatusEvent(
+                command.getBookId(),
+                command.getIsReady(),
+                command.getEmployeeId(),
+                command.getBorrowingId()
+        );
+        log.info("UpdateStatusBookCommand - employeeId: {}", command.getEmployeeId());
+        AggregateLifecycle.apply(event);
+    }
+
+
+    @CommandHandler
+    public void handler(RollbackStatusBookCommand command) {
+        BookRollBackStatusEvent bookRollBackStatusEvent = new BookRollBackStatusEvent();
+        BeanUtils.copyProperties(command, bookRollBackStatusEvent);
+        AggregateLifecycle.apply(bookRollBackStatusEvent);
     }
 
 //    cap nhap trang thai cua aggregate
@@ -85,6 +108,12 @@ public class BookAggregate {
 
     @EventSourcingHandler
     public void on(BookUpdateStatusEvent event) {
+        this.id = event.getBookId();
+        this.isReady = event.getIsReady();
+    }
+
+    @EventSourcingHandler
+    public void on(BookRollBackStatusEvent event) {
         this.id = event.getBookId();
         this.isReady = event.getIsReady();
     }

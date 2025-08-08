@@ -1,4 +1,4 @@
-package com.bookservice.employee.query.queries;
+package com.bookservice.commonservice.queries;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -2,6 +2,7 @@ package com.bookservice.client.command.event;
 
 import com.bookservice.client.command.data.Book;
 import com.bookservice.client.command.data.BookRepository;
+import com.bookservice.commonservice.event.BookRollBackStatusEvent;
 import com.bookservice.commonservice.event.BookUpdateStatusEvent;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.beans.BeanUtils;
@@ -52,5 +53,15 @@ public class BookEventHandler {
     public void on(BookDeletedEvent event) {
         Optional<Book> oldBook = bookRepository.findById(event.getId());
         oldBook.ifPresent(book -> bookRepository.delete(book));
+    }
+
+    @EventHandler
+    public void on(BookRollBackStatusEvent event) {
+        Optional<Book> oldBook = bookRepository.findById((event.getBookId()));
+        oldBook.ifPresent(book -> {
+            book.setIsReady(event.getIsReady());
+            bookRepository.save(book);
+
+        });
     }
 }
