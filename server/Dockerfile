@@ -1,7 +1,7 @@
 #use maven for building
 FROM maven:3.8.5-openjdk-17-slim as build
 WORKDIR /app
-COPY . ./server
+COPY ./server ./server
 WORKDIR /app/server
 RUN mvn clean package -DskipTests
 
