@@ -86,3 +86,22 @@
 - gồm có 2 phương thức: choreography, orchestration
     choreography: event based
     orchestration: command based - điều phối các local transaction
+
+**DOCKER
+- là một nền tảng về containerization
+- containerization
+    là một công nghệ ảo hóa
+    giúp giải quyết vấn đề bằng cách đóng gói ứng dụng và tất cả các phụ thuộc
+
+- docker engine
+là một ứng dụng client server gồm có 3 thành phần chính: Docker cli, docker api, docker daemon
+- docker image
+sẽ định nghĩa tất cả những gì cần phải chạy của 1 ứng dụng
+không thay đổi được từ bên ngoài
+sau khi image được chạy sẽ tạo ra container
+    tính nhất quán giữa các môi trường
+    cách ly môi trường
+    phụ thuộc
+    ứng dụng
+- docker hub
+là một registry service được cung cấp bởi docker
