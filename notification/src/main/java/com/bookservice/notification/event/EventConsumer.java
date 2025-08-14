@@ -1,7 +1,8 @@
 package com.bookservice.notification.event;
 
-import com.bookservice.commonservice.services.EmailService;
-import lombok.extern.slf4j.Slf4j;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.kafka.common.errors.RetriableException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.DltHandler;
@@ -12,8 +13,9 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.bookservice.commonservice.services.EmailService;
+
+import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Slf4j
