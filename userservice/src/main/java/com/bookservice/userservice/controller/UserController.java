@@ -21,7 +21,8 @@ public class UserController {
     }
 
     @GetMapping
-    public ResponseEntity<List<UserResponseDTO>> getAllUsers() {
+    public ResponseEntity<List<UserResponseDTO>> getAllUsers(@RequestHeader(value = "X-User-Id", required = true) String userId) {
+        System.out.println("Receive X-User-Id: " + userId);
         return ResponseEntity.ok(userService.getAllUsers());
     }
 
