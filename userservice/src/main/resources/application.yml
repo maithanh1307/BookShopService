@@ -25,5 +25,5 @@ spring:
 idp:
   url: http://localhost:8180
   client-id: bookshop_app
-  client-secret: cRE3YqqzGFAI86k51cOIViYptkVBNU3v
+  client-secret: ousocNXB54Yo1GMhx1rBUUHXvUaJRQbf
   realm: master

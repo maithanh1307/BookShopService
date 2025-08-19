@@ -3,6 +3,7 @@ package com.bookservice.userservice.repository;
 import com.bookservice.userservice.dto.identity.TokenExchangeParam;
 import com.bookservice.userservice.dto.identity.TokenExchangeRepsonse;
 import com.bookservice.userservice.dto.identity.UserCreationParam;
+import com.bookservice.userservice.dto.identity.UserTokenExchangeParam;
 import feign.QueryMap;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
@@ -24,4 +25,7 @@ public interface IdentityClient {
             consumes = MediaType.APPLICATION_JSON_VALUE
     )
     ResponseEntity<?> createUser(@RequestBody() UserCreationParam body, @RequestHeader("authorization") String token);
+
+    @PostMapping(value="realms/master/protocol/openid-connect/token", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    TokenExchangeRepsonse exchangeUserToken(@QueryMap UserTokenExchangeParam param);
 }

@@ -1,10 +1,9 @@
 package com.bookservice.userservice.service.impl;
 
 import com.bookservice.userservice.dto.CreateUserRequestDTO;
+import com.bookservice.userservice.dto.LoginRequestDTO;
 import com.bookservice.userservice.dto.UserResponseDTO;
-import com.bookservice.userservice.dto.identity.Credential;
-import com.bookservice.userservice.dto.identity.TokenExchangeParam;
-import com.bookservice.userservice.dto.identity.UserCreationParam;
+import com.bookservice.userservice.dto.identity.*;
 import com.bookservice.userservice.entity.User;
 import com.bookservice.userservice.repository.IdentityClient;
 import com.bookservice.userservice.repository.UserRepository;
@@ -107,6 +106,19 @@ public class UserServiceImpl implements IUserService {
     @Override
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
+    }
+
+    @Override
+    public TokenExchangeRepsonse login(LoginRequestDTO dto) {
+        var token = identityClient.exchangeUserToken(UserTokenExchangeParam.builder()
+                .grant_type("password")
+                .client_secret(clientSecret)
+                .client_id(clientId)
+                .scope("openid")
+                .username(dto.getUsername())
+                .password(dto.getPassword())
+                .build());
+        return token;
     }
 
     private UserResponseDTO toDTO(User user) {
