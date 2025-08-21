@@ -105,3 +105,22 @@ sau khi image được chạy sẽ tạo ra container
     ứng dụng
 - docker hub
 là một registry service được cung cấp bởi docker
+
+**Kubernet
+- là một hệ thống điều phối container mã nguồn mở được phát triển bởi google
+- lợi ích của kubernets:
+    khả năng mở rộng
+    tính sẵn có
+    triển khai/giao hàng liên tục
+    tính di động
+- thách thức trong việc triển khai kubernet
+    bảo mật
+    chi phí
+    thách thức về mạng
+    tài nguyên
+    độ phức tạp
+- kubernets architecture
+    control plane
+    worker node
+- install kubernetes
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download

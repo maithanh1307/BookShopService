@@ -46,15 +46,14 @@ spring:
           issuer-uri: http://localhost:8180/realms/master
 
 eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
-    ip-address: 127.0.0.1
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://discoveryserver.default.svc.cluster.local:8761/eureka
     register-with-eureka: true
     fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    hostname: ${spring.application.name}
 
 logging:
   level:

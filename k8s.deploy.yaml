@@ -1,0 +1,188 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: discoveryserver
+#   labels:
+#     app: discoveryserver
+# spec:
+#   replicas: 3
+#   selector:
+#     matchLabels:
+#       app: discoveryserver
+#   template:
+#     metadata:
+#       labels:
+#         app: discoveryserver
+#     spec:
+#       containers:
+#       - name: discoveryserver
+#         image: bookshopservice-discoveryserver
+#         imagePullPolicy: IfNotPresent
+#         ports:
+#         - containerPort: 8761
+# ---
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: apigateway
+#   labels:
+#     app: apigateway
+# spec:
+#   replicas: 2
+#   selector:
+#     matchLabels:
+#       app: apigateway
+#   template:
+#     metadata:
+#       labels:
+#         app: apigateway
+#     spec:
+#       containers:
+#       - name: apigateway
+#         image: bookshopservice-apigateway
+#         imagePullPolicy: IfNotPresent
+#         ports:
+#         - containerPort: 8080
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: discoveryserver
+# spec:
+#   selector:
+#     app: discoveryserver
+#   ports:
+#     - protocol: TCP
+#       port: 8761
+#       targetPort: 8761
+#   type: NodePort
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: apigateway
+# spec:
+#   selector:
+#     app: apigateway
+#   ports:
+#     - protocol: TCP
+#       port: 80
+#       targetPort: 8080
+#   type: NodePort
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discoveryserver
+  labels:
+    app: discoveryserver
+spec:
+  replicas: 1  # Chỉ 1 instance cho single Eureka server
+  selector:
+    matchLabels:
+      app: discoveryserver
+  template:
+    metadata:
+      labels:
+        app: discoveryserver
+    spec:
+      containers:
+      - name: discoveryserver
+        image: bookshopservice-discoveryserver
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8761
+        env:
+        - name: EUREKA_CLIENT_REGISTER_WITH_EUREKA
+          value: "false"  # Server không tự register với chính nó
+        - name: EUREKA_CLIENT_FETCH_REGISTRY
+          value: "false"
+        - name: EUREKA_INSTANCE_HOSTNAME
+          value: "discoveryserver"
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8761
+          initialDelaySeconds: 60
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8761
+          initialDelaySeconds: 90
+          periodSeconds: 30
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apigateway
+  labels:
+    app: apigateway
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: apigateway
+  template:
+    metadata:
+      labels:
+        app: apigateway
+    spec:
+      containers:
+      - name: apigateway
+        image: bookshopservice-apigateway
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        env:
+        # Cấu hình Eureka client cho API Gateway
+        - name: EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE
+          value: "http://discoveryserver.default.svc.cluster.local:8761/eureka"
+        - name: EUREKA_CLIENT_REGISTER_WITH_EUREKA
+          value: "true"
+        - name: EUREKA_CLIENT_FETCH_REGISTRY
+          value: "true"
+        - name: EUREKA_INSTANCE_PREFER_IP_ADDRESS
+          value: "true"
+        - name: EUREKA_INSTANCE_HOSTNAME
+          value: "apigateway"
+        - name: SPRING_APPLICATION_NAME
+          value: "apigateway"
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 30
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: discoveryserver
+spec:
+  selector:
+    app: discoveryserver
+  ports:
+    - protocol: TCP
+      port: 8761
+      targetPort: 8761
+  type: ClusterIP  #  Đổi thành ClusterIP (internal only)
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apigateway
+spec:
+  selector:
+    app: apigateway
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: NodePort  # API Gateway cần external access
