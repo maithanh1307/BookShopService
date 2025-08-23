@@ -124,3 +124,11 @@ là một registry service được cung cấp bởi docker
     worker node
 - install kubernetes
 https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
+
+**VPS Hosting
+- dùng để up những project microservice
+- lợi ích
+    hiệu suất
+    quản lí dễ dàng
+    chi phí hợp lí
+    ứng dụng đa dạng
