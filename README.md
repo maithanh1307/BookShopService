@@ -132,3 +132,32 @@ https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.ex
     quản lí dễ dàng
     chi phí hợp lí
     ứng dụng đa dạng
+
+**Circuit Breaker
+làm giảm tình trạng quá tải request
+
+**Kong Gateway
+- lợi ích của việc sử dụng API Gateway
+    che được cấu trúc của hệ thống microservice với bên ngoài
+    phần code sẽ được gọn gàng hơn
+    dễ dàng theo dõi và quản lí traffic
+    request catching và cân bằng tải
+    thêm một lớp bảo mật cho hệ thống
+    thay thế authentication service
+- bất lợi của API Gateway
+    tăng thời gian response
+    gây tắc nghẽn cổ chai
+    tốn thêm tiền
+- KONG GATEWAY
+    + là dependencies của spring
+    + tương tự như các API khác, nhẹ hơn và được dùng sử dụng cho microservice
+    + có độ trễ thấp
+    + hiệu suất cao
+    + scability
+    + không chứa các trạng thái logic code
+    + ưu điểm
+        khả năng mở rộng khủng
+        có nhiều plugin
+        hiệu năng khủng
+        miễn phí
+        plugin của kong được viết bằng ngôn ngữ "lua"
